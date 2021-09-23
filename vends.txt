@@ -1,0 +1,7 @@
+loja do chef;false;Polly Almeida;034234437-23;polly@gmail.com;
+Utensilio;Faca;55;Tramontina;3;azul;false;
+Utensilio;Panela;105;Tramontina;1;branco;true;
+Eletroportatil;Microonda;400;Eletrolux;100;branco;false;
+Eletroportatil;Geladeira;1200;Brastemp;150;branco;true;
+Churrasco;Frango;20;Korin;chimichurri;false;250;
+Churrasco;Molho;10;Korin;pimenta;false;10;

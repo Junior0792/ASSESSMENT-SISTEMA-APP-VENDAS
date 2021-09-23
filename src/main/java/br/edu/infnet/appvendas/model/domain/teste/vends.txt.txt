@@ -1,0 +1,7 @@
+informacao do venda 1;desconto; nome do cliente;034234437-23;teste@gmail.com;
+U;Faca;55;Tramontina;
+U;Panela;105;Tramontina;
+E;Microonda;400;Eletrolux;
+E;Geladeira;1200;Brastemp;
+C;Frango;20;Korin;
+C;Molho;10;Korin;
