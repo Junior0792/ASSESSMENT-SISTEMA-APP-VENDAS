@@ -1,0 +1,6 @@
+loja do chef;Polly Almeida;Faca;55.3
+loja do chef;Polly Almeida;Panela;112.1
+loja do chef;Polly Almeida;Microonda;450.0
+loja do chef;Polly Almeida;Geladeira;1295.0
+loja do chef;Polly Almeida;Frango;70.0
+loja do chef;Polly Almeida;Molho;12.0
