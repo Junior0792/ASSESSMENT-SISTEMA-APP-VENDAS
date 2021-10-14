@@ -16,8 +16,8 @@ public class ProdutoTeste {
 			Utensilio faca = new Utensilio("Faca", 59, "Tramontina");
 			faca.setCor("Preta");
 			faca.setInox(false);
+			faca.setQuantidade(10);
 			System.out.println("Valor da compra: " + faca);
-			faca.setQuantidade(0);
 		} catch (QuantidadeNegativoException e) {
 			System.out.println(e.getMessage());
 		}
@@ -25,7 +25,7 @@ public class ProdutoTeste {
 
 		try {
 			Utensilio panela = new Utensilio("Panela", 120, "Tramontina");
-			panela.setQuantidade(0);
+			panela.setQuantidade(10);
 			panela.setCor("azul");
 			panela.setInox(true);
 			System.out.println("valor da compra: " + panela.somarPreços());
@@ -38,7 +38,7 @@ public class ProdutoTeste {
 	    try{
 			Eletroportatil lavadora = new Eletroportatil("Lavadora", 500, "Eletrolux");
 			lavadora.setCor("Branca");
-			lavadora.setPotencia(0);
+			lavadora.setPotencia(10);
 			lavadora.setGarantía(false);
 			System.out.println("Valor da compra: " + lavadora);
 	    } catch (PotenciaNegativoException e) {

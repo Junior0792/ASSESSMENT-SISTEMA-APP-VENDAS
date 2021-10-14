@@ -30,7 +30,7 @@ public class Churrasco extends Produto {
 		sb.append(";");
 		sb.append(peso);
 		sb.append(";");
-		sb.append(picanha? "5.5f" : "0");
+		sb.append(picanha? "5.0f" : "0");
 		sb.append(";");
 		sb.append (somarPreços());
 

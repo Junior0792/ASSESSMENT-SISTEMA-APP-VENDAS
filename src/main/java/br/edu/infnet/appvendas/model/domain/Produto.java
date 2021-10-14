@@ -15,8 +15,7 @@ public abstract class Produto {
 	}
 	
 	public float somarPreços() {
-		
-		return 50;
+		return 20;
 	}
 
 	@Override

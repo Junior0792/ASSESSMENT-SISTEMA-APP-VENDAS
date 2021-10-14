@@ -91,21 +91,21 @@ public class VendaTeste {
 		}
 		
 		Venda utensilios = new Venda();
-		utensilios.setInformacao("Utensilios de cozinha: ");
+		utensilios.setInformacao("Utensilios de cozinha ");
 		utensilios.setCliente(cliente);
 		utensilios.setDesconto(false);
 		utensilios.setProdutos(listaUtensilios);
 		System.out.println(utensilios);
 		
 		Venda Eletroportatil = new Venda();
-		Eletroportatil.setInformacao("Eletroportatil: ");
+		Eletroportatil.setInformacao("Eletroportatil ");
 		Eletroportatil.setCliente(cliente);
 		Eletroportatil.setDesconto(true);
 		Eletroportatil.setProdutos(listaEletroportatil);
 		System.out.println(Eletroportatil);
 		
 		Venda Churrasco = new Venda();
-		Churrasco.setInformacao("Ingredientes de churrasco: ");
+		Churrasco.setInformacao("Ingredientes de churrasco ");
 		Churrasco.setCliente(cliente);
 		Churrasco.setDesconto(true);
 		Churrasco.setProdutos(listaEletroportatil);
