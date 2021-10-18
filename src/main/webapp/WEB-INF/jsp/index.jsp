@@ -66,7 +66,7 @@
   <div class="jumbotron" style="background-color:gray clear">
 	  <h4 class="alert-heading">Não tem conta no nosso site?</h4>
 
-  <font size="4"><a href="/cliente/Cadastro">Criar uma conta aqui!</a></font>
+  <font size="4"><a href="/cliente/cadastro">Criar uma conta aqui!</a></font>
   </div>
 
 
