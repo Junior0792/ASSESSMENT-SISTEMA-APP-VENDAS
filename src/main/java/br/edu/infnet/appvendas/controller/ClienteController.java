@@ -11,7 +11,7 @@ public class ClienteController {
 	@GetMapping(value = "/cliente")
 	public String telaCadastro() {
 		
-	return "cliente/Cadastro";	
+	return "cliente/";	
 	}
 
 //Post
@@ -20,6 +20,6 @@ public class ClienteController {
 		
 	System.out.println("O cliente foi adicionado com sucesso!");
 		
-	return "cliente/Cadastro";
+	return "cliente/Cadastro/";
 	}
 }

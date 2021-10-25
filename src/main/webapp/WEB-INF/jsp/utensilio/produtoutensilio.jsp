@@ -34,6 +34,7 @@
 
 <div class="jumbotron" style="background-color:gray clear">
 	  <h2 class="alert-heading">Utensilio</h2>
+	   <img src= "https://www.thehomestore.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2NTI5NHxpbWFnZS9qcGVnfGltYWdlcy9oZGEvaDk1Lzg4ODQxMjg5NzI4MzAuanBnfGMzNjcxYjM1ZjUzZDZiMDUwYjY4ZDMyNzJkYjhlMGNmMGRlMDEzNGE2NjY4ODZlMDZlY2MzMDE3N2U2YTA1NjE" width= "500px"/>
 </div>
 
 <div class="jumbotron" style="background-color:gray clear">

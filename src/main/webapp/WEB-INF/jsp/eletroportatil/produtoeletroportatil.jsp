@@ -34,6 +34,8 @@
 
 <div class="jumbotron" style="background-color:gray clear">
 	  <h2 class="alert-heading">Eletroportatil</h2>
+	  <img src= "https://media.rourejuni.com/c/product/lijadora-orbital-bosch-pss-200-ac-lijadora-orbital-pss200ac-520x520.jpg" width= "500px"/>
+	  
 </div>
 
 <div class="jumbotron" style="background-color:gray clear">

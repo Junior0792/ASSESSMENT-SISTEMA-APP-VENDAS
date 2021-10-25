@@ -3,13 +3,16 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Produtos</title>
+<title>Menu incial</title>
+<meta charset="ISO-8859-1">
+<title>A casa do Chef</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">A casa do Chef</a>
@@ -19,30 +22,34 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Produtos</a>
+          <a class="nav-link" href="categorias.jsp">Produtos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Meu carrinho</a>
+          <a class="nav-link" href="carrinho.jsp">Meu carrinho</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contatos</a>
+          <a class="nav-link" href="index.jsp">Contatos</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron" style="background-color:gray clear">
-	  <h2 class="alert-heading"><a href="utensilios.jsp">Utensilio</a></h2>
-</div>
 
-<div class="jumbotron" style="background-color:gray clear">
-	  <h2 class="alert-heading"><a href= "eletroportatil.jsp">Eletroportatil</a></h2>
-</div>
 
-<div class="jumbotron" style="background-color:gray clear">
-	  <h2 class="alert-heading"><a href= "churrasco.jsp">Churrasco</a></h2>
-</div>
+
+ 
+      <div class="jumbotron" style="background-color:gray clear">
+	  <h1 class="alert-heading"></h1>
+	  <h3>Você pode-se comunicar por nosso numero de telefone: +55(27)123-456-23</h3>
+	  <h3>Nosso email: acasadochef@gmail.com</h3>
+	  </div>
+	 
+	 
+
+
+
+
 
 
 

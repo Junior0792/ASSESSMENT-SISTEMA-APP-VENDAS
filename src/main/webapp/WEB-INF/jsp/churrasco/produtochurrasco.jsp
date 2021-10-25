@@ -35,6 +35,7 @@
 
    <div class="jumbotron" style="background-color:gray clear">
 	  <h2 class="alert-heading">Churrasco</h2>
+	 <img src= "https://lh3.googleusercontent.com/proxy/DVRXGnGBruSZIvsrAeZsAFaAOjS73U2-dJ6uDhyEUtI5BSYdw7DsojB5LknzIlmM7VDCnqn2y4zN9J4isRu7vQ6BXOPF_por8IaytGelN2RE76g5SDooxVxztp_TqxVsgKLEfDQTn8tCNMk5tf8JS61chGp7VIWpREeV9x7RR_VdhkIeusGOSg" width= "500px"/>
    </div>
   
   <div class="jumbotron" style="background-color:gray clear">

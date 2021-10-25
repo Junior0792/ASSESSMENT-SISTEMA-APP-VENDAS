@@ -22,10 +22,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Produtos</a>
+          <a class="nav-link" href="categorias.jsp">Produtos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Meu carrinho</a>
+          <a class="nav-link" href="carrinho.jsp">Meu carrinho</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contatos</a>
@@ -36,18 +36,20 @@
 </nav>
 
 
+
+
  
-   <div class="jumbotron" style="background-color:gray clear">
-	  <h2 class="alert-heading">A casa do Chef</h2>
+      <div class="jumbotron" style="background-color:gray clear">
+	  <h1 class="alert-heading"></h1>
 	  <h3>Somos uma loja especializada em produtos de cozinha e eletroportáteis.</h3>
 	  <h3>Aqui você encontra diversos tipos de utensílios, eletroportáteis e produtos para o seu churrasco.</h3>
-	  
+	  <img src= "https://mueller.ind.br/uploads/imagens/lista-de-utensilios-domesticos-que-nao-podem-faltar-na-sua-casa-71-lg-55.jpg" width= "1300px"/>
+	  </div>
 	  <hr>
-	  <p class="mb-0"></p>
-   </div>
+      <p class="mb-0"></p>    
 
   <div class="jumbotron" style="background-color:gray clear">
-	  <h4 class="alert-heading">Acessa no sistema</h4>
+	  <h4 class="alert-heading">Login</h4>
 	  
     <div class="form-group">
 	  <label class="control-label col-sm-20">E-mail</label>
@@ -56,7 +58,7 @@
    
    <div class="form-group">
 	  <label class="control-label col-sm-20">Senha</label>
-	  <input type="password"name="password"class="form-control">
+	  <input type="password"name="password"class="form-control"placeholder="Digite sua senha">
     </div> 
     
     <p align="center"><input type="button" value="Entrar"class="btn btn-secondary onclick="location.href='./09_03_Tela_de_Ofertas.html'">
@@ -66,7 +68,7 @@
   <div class="jumbotron" style="background-color:gray clear">
 	  <h4 class="alert-heading">Não tem conta no nosso site?</h4>
 
-  <font size="4"><a href="/cliente/cadastro">Criar uma conta aqui!</a></font>
+  <font size="4"><a href="/cliente">Criar uma conta aqui!</a></font>
   </div>
 
 
