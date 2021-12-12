@@ -12,6 +12,7 @@ Classes Filhas: Utensilio, Churrasco e Eletroportatil
 
 Para mais informação pode acessar no link que esta embaixo:
 
-https://github.com/Junior0792/ASSESSMET-DESENVOLVIMENTO-WEB-COM-JAVA-EE
+https://github.com/Junior0792/ASSESSMENT-SISTEMA-APP-VENDAS 
+
 
 
