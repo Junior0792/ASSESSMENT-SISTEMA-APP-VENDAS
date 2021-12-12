@@ -8,11 +8,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.edu.infnet.appvendas.model.domain.Cliente;
-import br.edu.infnet.appvendas.model.domain.Utensilio;
 import br.edu.infnet.appvendas.model.domain.Churrasco;
+import br.edu.infnet.appvendas.model.domain.Cliente;
 import br.edu.infnet.appvendas.model.domain.Eletroportatil;
 import br.edu.infnet.appvendas.model.domain.Produto;
+import br.edu.infnet.appvendas.model.domain.Utensilio;
 import br.edu.infnet.appvendas.model.domain.Venda;
 import br.edu.infnet.appvendas.model.exceptions.PesoNegativoException;
 import br.edu.infnet.appvendas.model.exceptions.PotenciaNegativoException;
@@ -87,7 +87,7 @@ public static void main(String[] args) {
 							try {
 								eletroportatil.setPotencia(Float.valueOf(campos[4]));
 								eletroportatil.setCor(campos[5]);
-								eletroportatil.setGarantía(Boolean.valueOf(campos[6]));
+								eletroportatil.setGarantia(Boolean.valueOf(campos[6]));
 								
 								produtos.add(eletroportatil);
 
@@ -134,7 +134,7 @@ public static void main(String[] args) {
 							venda.getInformacao()+";"+
 							venda.getCliente().getNome()+";"+
 							pr.getNome()+";"+
-							pr.somarPreços()+"\r\n");
+							pr.somarPrecos()+"\r\n");
 
 				}
 				

@@ -4,14 +4,27 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Sistema de Vendas</title>
+<title>Sistema de Venda</title>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
+
 	<c:import url="/WEB-INF/jsp/menu.jsp"/>
 
-	<div class="container">	
-		<form action="/cliente/incluir" method="post">	
+	<div class="container">
+	
+		<form action="/cep" class="form-inline" method="post">
+			<div class="form-group">
+		      <label>Cep:</label>
+		      <input value="12345678" type="text" class="form-control" placeholder="Digite o cep" name="cep">
+		    </div>			
+			
+			<button class="btn btn-primary" type="submit">Buscar</button>			
+		</form>
+		
+		<hr>
+		
+		<form action="/usuario/incluir" method="post">	
 			<div class="form-group">
 		      <label>Nome:</label>
 		      <input value="Junior Roso" type="text" class="form-control" placeholder="Digite seu nome" name="nome">
@@ -22,12 +35,14 @@
 		      <input value="junior.aranguren@al.infnet.edu.br" type="email" class="form-control" placeholder="Digite seu e-mail" name="email">
 		    </div>			
 			
-			<div class="form-group">
-		      <label>CPF:</label>
-		      <input value="12312312312" type="text" class="form-control" placeholder="Digite seu CPF" name="cpf">
-		    </div>			
-
-			<button class="btn btn-light" type="submit">Cadastrar</button>
+		    <div class="form-group">
+		      <label>Senha:</label>
+		      <input type="password" value="junior.aranguren@al.infnet.edu.br" class="form-control" placeholder="Digite sua senha" name="senha">
+		    </div>
+			
+			<c:import url="/WEB-INF/jsp/endereco.jsp"/>
+		    			
+			<button class=""btn btn-light"" type="submit">Cadastrar</button>
 		</form>
 	</div>
 </body>

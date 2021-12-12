@@ -52,7 +52,7 @@ public class VendaTeste {
 		try {
 			microonda.setCor("Branca");
 			microonda.setPotencia(50);
-			microonda.setGarantía(false);
+			microonda.setGarantia(false);
 			listaEletroportatil.add(microonda);
 		} catch (PotenciaNegativoException e) {
 			System.out.println(e.getMessage());	
@@ -63,7 +63,7 @@ public class VendaTeste {
         try {
 			arcondicionado.setPotencia(90);
 	        arcondicionado.setCor("azul");
-	        arcondicionado.setGarantía(false);
+	        arcondicionado.setGarantia(false);
 			listaEletroportatil.add(arcondicionado);
 		} catch (PotenciaNegativoException e) {
 			System.out.println(e.getMessage());	

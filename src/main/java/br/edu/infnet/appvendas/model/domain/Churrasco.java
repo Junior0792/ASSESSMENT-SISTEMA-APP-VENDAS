@@ -1,7 +1,14 @@
 package br.edu.infnet.appvendas.model.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import br.edu.infnet.appvendas.model.exceptions.PesoNegativoException;
 
+
+
+@Entity
+@Table(name = "Churrasco")
 public class Churrasco extends Produto {
 	
 	private String tempero;
@@ -9,13 +16,20 @@ public class Churrasco extends Produto {
 	private float peso;
 	
 
-	public Churrasco(String nome, float preço, String marca) {
-		super(nome, preço, marca);
+	public Churrasco() {
+		
+		
+	}
+	
+	
+	
+	public Churrasco(String nome, float preco, String marca) {
+		super(nome, preco, marca);
 	}
 
 	@Override
-	public float somarPreços() {
-		return getPreço() + (picanha ? 2 : 0) + 0.2f * peso;
+	public float somarPrecos() {
+		return getPreco() + (picanha ? 2 : 0) + 0.2f * peso;
 	}
 	
 	@Override
@@ -32,7 +46,7 @@ public class Churrasco extends Produto {
 		sb.append(";");
 		sb.append(picanha? "5.0f" : "0");
 		sb.append(";");
-		sb.append (somarPreços());
+		sb.append (somarPrecos());
 
 		return sb.toString();
 	}

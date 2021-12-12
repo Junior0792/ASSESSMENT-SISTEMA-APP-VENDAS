@@ -1,20 +1,29 @@
 package br.edu.infnet.appvendas.model.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import br.edu.infnet.appvendas.model.exceptions.PotenciaNegativoException;
 
+@Entity
+@Table(name = "Eletroportatil")
 public class Eletroportatil extends Produto {
 	
 	private float potencia;
 	private String cor;
 	private boolean garantia;
+	
+	public Eletroportatil() {
+		
+	}
 
-	public Eletroportatil(String nome, float preço, String marca) {
-		super(nome, preço, marca);
+	public Eletroportatil(String nome, float preco, String marca) {
+		super(nome, preco, marca);
 	}
 
 	@Override
-	public float somarPreços() {
-		return getPreço() + (garantia ? 20 : 0) + 0.50f * potencia;
+	public float somarPrecos() {
+		return getPreco() + (garantia ? 20 : 0) + 0.50f * potencia;
 	}
 	
 	@Override
@@ -31,7 +40,7 @@ public class Eletroportatil extends Produto {
 		sb.append(";");
 		sb.append(garantia? "2" : "0");
 		sb.append(";");
-		sb.append (somarPreços());
+		sb.append (somarPrecos());
 
 		return sb.toString();
 	}
@@ -57,11 +66,11 @@ public class Eletroportatil extends Produto {
 		this.cor = cor;
 	}
 
-	public boolean getGarantía() {
+	public boolean getGarantia() {
 		return garantia;
 	}
 
-	public void setGarantía(boolean garantia) {
+	public void setGarantia(boolean garantia) {
 		this.garantia = garantia;
 	}
 	

@@ -28,7 +28,7 @@ public class ProdutoTeste {
 			panela.setQuantidade(10);
 			panela.setCor("azul");
 			panela.setInox(true);
-			System.out.println("valor da compra: " + panela.somarPreços());
+			System.out.println("valor da compra: " + panela.somarPrecos());
 			
 		} catch (QuantidadeNegativoException e) {
 			System.out.println(e.getMessage());		
@@ -39,7 +39,7 @@ public class ProdutoTeste {
 			Eletroportatil lavadora = new Eletroportatil("Lavadora", 500, "Eletrolux");
 			lavadora.setCor("Branca");
 			lavadora.setPotencia(10);
-			lavadora.setGarantía(false);
+			lavadora.setGarantia(false);
 			System.out.println("Valor da compra: " + lavadora);
 	    } catch (PotenciaNegativoException e) {
 			System.out.println(e.getMessage());		
@@ -49,8 +49,8 @@ public class ProdutoTeste {
 			Eletroportatil geladeira = new Eletroportatil("Geladeira", 1000, "Brastemp");
 			geladeira.setCor("Cinza");
 			geladeira.setPotencia(10);
-			geladeira.setGarantía(true);
-			System.out.println("Valor da compra: " + geladeira.somarPreços());
+			geladeira.setGarantia(true);
+			System.out.println("Valor da compra: " + geladeira.somarPrecos());
 	    } catch (PotenciaNegativoException e) {
 			System.out.println(e.getMessage());		
 	    }	
@@ -69,7 +69,7 @@ public class ProdutoTeste {
 			costela.setPicanha(false);
 			costela.setPeso(1000);
 			costela.setTempero("Pimenta do reino");
-			System.out.println("Valor da compra: " + costela.somarPreços());
+			System.out.println("Valor da compra: " + costela.somarPrecos());
 	   }catch (PesoNegativoException e ) {
 			System.out.println(e.getMessage());	
 	   }

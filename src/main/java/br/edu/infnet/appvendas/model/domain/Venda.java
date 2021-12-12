@@ -5,14 +5,35 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Venda")
 public class Venda {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
 	private String informacao;
+	@OneToOne(cascade = CascadeType.DETACH) 
+	@JoinColumn(name = "idCliente")
 	private Cliente cliente;
 	private LocalDateTime data;
 	private boolean desconto;
+	@ManyToMany(cascade = CascadeType.DETACH)
 	private List<Produto> produtos;
-	
+	@ManyToOne
+	@JoinColumn(name = "idUsuario")
+	private Usuario usuario;
 
 	public Venda() {
 		data = LocalDateTime.now();
@@ -64,6 +85,22 @@ public class Venda {
 
 	public void setProdutos(List<Produto> produtos) {
 		this.produtos = produtos;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	} 
 	
 	

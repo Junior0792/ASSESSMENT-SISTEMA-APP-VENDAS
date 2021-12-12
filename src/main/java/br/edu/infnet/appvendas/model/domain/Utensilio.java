@@ -1,23 +1,33 @@
 package br.edu.infnet.appvendas.model.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import br.edu.infnet.appvendas.model.exceptions.QuantidadeNegativoException;
 
+@Entity
+@Table(name = "Utensilio")
 public class Utensilio extends Produto {
 
 	private float quantidade;
 	private String cor;
 	private boolean inox;
 	
-	
-	public Utensilio(String nome, float preço, String marca) {
-		super(nome, preço, marca);
+	public Utensilio() {
+		
 	}
 
 	
+	public Utensilio(String nome, float preco, String marca) {
+		super(nome, preco, marca);
+	}
+
+	
+
 	@Override
-	public float somarPreços() {
+	public float somarPrecos() {
 		
-		return getPreço() + (inox ? 7 : 0) + 0.10f * quantidade;
+		return getPreco() + (inox ? 7 : 0) + 0.10f * quantidade;
 	}
 	
 	@Override
@@ -34,7 +44,7 @@ public class Utensilio extends Produto {
 		sb.append(";");
 		sb.append(inox);
 		sb.append(";");
-		sb.append (somarPreços());
+		sb.append (somarPrecos());
 
 		return sb.toString();
 	}
