@@ -25,10 +25,14 @@ public class ProdutoController {
 	}
 
 	@GetMapping(value = "/produto/{id}/excluir")
-	public String excluir(@PathVariable Integer id) {
+public String excluir(Model model, @PathVariable Integer id, @SessionAttribute("user") Usuario usuario) {
 		
-		produtoService.excluir(id);
+		try {
+			produtoService.excluir(id);
+		} catch (Exception e) {
+			model.addAttribute("mensagem", "Impossível realizar a exclusão deste produto!!!");
+		}
 
-		return "redirect:/produtos";
+		return this.telaLista(model, usuario);
 	}
 }

@@ -24,7 +24,7 @@ public class UsuarioService {
 	}
 	
 	public List<Usuario> obterLista(){
-		return (List<Usuario>) usuarioRepository.findAll(Sort.by(Sort.Direction.ASC, "email"));
+		return (List<Usuario>) usuarioRepository.findAll(Sort.by(Sort.Direction.ASC, "nome"));
 	}
 
 	public void excluir(Integer id) {

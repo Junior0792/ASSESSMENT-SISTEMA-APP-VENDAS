@@ -23,6 +23,12 @@
 			</div>
 		</c:if>
 		
+		<c:if test="${not empty mensagem}">
+			<div class="alert alert-danger">
+				 <strong>Atenção!</strong> ${mensagem}
+			</div>
+			
+		</c:if>
 		<c:if test="${not empty listaUtensilios}">
 		
 			<h4>Listagem de utensilios (${listaUtensilios.size()}):</h4>		

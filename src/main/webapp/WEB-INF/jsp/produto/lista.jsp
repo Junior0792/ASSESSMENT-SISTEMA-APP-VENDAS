@@ -19,6 +19,12 @@
 			</div>
 		</c:if>
 		
+		<c:if test="${not empty mensagem}">
+			<div class="alert alert-danger">
+				 <strong>Atenção!</strong> ${mensagem}
+			</div>
+			
+		</c:if>
 		<c:if test="${not empty listaProdutos}">
 		
 			<h4>Listagem de produtos (${listaProdutos.size()}):</h4>		

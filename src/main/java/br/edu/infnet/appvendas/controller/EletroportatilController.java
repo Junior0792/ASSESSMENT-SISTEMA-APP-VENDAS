@@ -44,10 +44,14 @@ public class EletroportatilController {
 	}
 	
 	@GetMapping(value = "/eletroportatil/{id}/excluir")
-	public String excluir(@PathVariable Integer id) {
+public String excluir(Model model, @PathVariable Integer id, @SessionAttribute("user") Usuario usuario) {
 		
-		eletroportatilService.excluir(id);
+		try {
+			eletroportatilService.excluir(id);
+		} catch (Exception e) {
+			model.addAttribute("mensagem", "Impossível realizar a exclusão deste eletroportatil!!!");
+		}
 
-		return "redirect:/eletroportatil";
+		return this.telaLista(model, usuario);
 	}
 }

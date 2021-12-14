@@ -44,10 +44,14 @@ public class ChurrascoController {
 	}
 	
 	@GetMapping(value = "/churrasco/{id}/excluir")
-	public String excluir(@PathVariable Integer id) {
+public String excluir(Model model, @PathVariable Integer id, @SessionAttribute("user") Usuario usuario) {
 		
-		churrascoService.excluir(id);
+		try {
+			churrascoService.excluir(id);
+		} catch (Exception e) {
+			model.addAttribute("mensagem", "Impossível realizar a exclusão deste produto de churrasco!!!");
+		}
 
-		return "redirect:/churrasco";
+		return this.telaLista(model, usuario);
 	}
 }

@@ -44,10 +44,14 @@ public class UtensilioController {
 	}
 	
 	@GetMapping(value = "/utensilio/{id}/excluir")
-	public String excluir(@PathVariable Integer id) {
+public String excluir(Model model, @PathVariable Integer id, @SessionAttribute("user") Usuario usuario) {
 		
-		utensilioService.excluir(id);
+		try {
+			utensilioService.excluir(id);
+		} catch (Exception e) {
+			model.addAttribute("mensagem", "Impossível realizar a exclusão deste utensilio!!!");
+		}
 
-		return "redirect:/utensilios";
+		return this.telaLista(model, usuario);
 	}
 }
