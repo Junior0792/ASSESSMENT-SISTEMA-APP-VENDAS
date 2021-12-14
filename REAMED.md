@@ -1,4 +1,4 @@
-Nome: Junior Roso</h3>
+Nome: Junior Roso
 Materia: Desenvolvimento Web com Java EE
 Professor: Elberth Lins Costa de Moraes
 Instituto Infnet
@@ -13,6 +13,3 @@ Classes Filhas: Utensilio, Churrasco e Eletroportatil
 Para mais informação pode acessar no link que esta embaixo:
 
 https://github.com/Junior0792/ASSESSMENT-SISTEMA-APP-VENDAS 
-
-
-
